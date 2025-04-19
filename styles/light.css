@@ -9,6 +9,40 @@
     Так стили написанные ниже будут иметь больший вес,
     чем стили в медиазапросе предпочтений пользователя
   */
+  --content-text-color: #353430;
+  --title-text-color: #353430;
+  --background-title-color: #FF8DCB;
+  --button-text-color: #353430;
+  --logo-color: #FFC2E6;
+  --accent-color: #FF8DCB;
+  --font-size: 18px;
+  --font-weight-title: 700;
+  --font-weight: 400;
+  --font-family: "IBM Plex Mono";
+  --background-color: #FFF1F7;
+  --border-color: #353430;
+  --title-color: #353430;
+  --background-img: url(../images/cover-image-light.png);
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+    /* Дублируем переменные светлой темы */
+    --content-text-color: #353430;
+    --title-text-color: #353430;
+    --background-title-color: #FF8DCB;
+    --button-text-color: #353430;
+    --logo-color: #FFC2E6;
+    --accent-color: #FF8DCB;
+    --font-size: 18px;
+    --font-weight-title: 700;
+    --font-weight: 400;
+    --font-family: "IBM Plex Mono";
+    --background-color: #FFF1F7;
+    --border-color: #353430;
+    --title-color: #353430;    
+    --background-img: url(../images/cover-image-light.png);
+  }
 }
 
 .theme-light .page {
