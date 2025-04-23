@@ -14,13 +14,10 @@
   --background-title-color: #FF0070;
   --button-text-color: #FF0070;
   --logo-color: #DB00FF;
-  --accent-color: #FF0070;
-  --font-size: 18px;
-  --font-weight-title: 700;
-  --font-weight: 400;
-  --font-family: "IBM Plex Mono";
+  --accent-color: #FF0070; 
   --background-color: #000028;
   --border-color: #FF0070;
+  --border-color-hover: #ff007066;
   --title-color: #FF0070;
   --background-img: url(../images/cover-image-dark.png);
 }
