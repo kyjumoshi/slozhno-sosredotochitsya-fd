@@ -11,7 +11,11 @@
 
 .header {
   height: 100vh;
+  height: 100vh;
   min-height: 668px;
+  display: grid;
+  grid-template-rows: 1fr min-content 1fr;
+  align-items: center;
 }
 
 .letter__spacing {
@@ -20,7 +24,7 @@
 
 .header__theme-menu {
   margin-right: 10px;
-  padding-top: 75px;
+  margin-top: 10px;
 }
 
 .rec__label {
@@ -73,16 +77,11 @@
   border-left: 1px solid var(--border-color);
 }
 
-.theme-light .rec__label {
-  display: none;
-}
-
 .header__theme-menu-list {
   display: flex;
   flex-direction: column;
   align-items: flex-end;
   gap: 10px;
-  margin-left: 10px;
 }
 
 .header__theme-menu-button {
@@ -116,7 +115,7 @@
   line-height: 83%;
   text-shadow: 4px 4px 0 var(--accent-color);
   font-family: var(--font-family), "Bold Regular", sans-serif;
-  margin: 67px 10px 0px 10px;
+  margin-left: 10px;
 }
 
 .header__content {
@@ -126,11 +125,12 @@
   background-color: var(--background-title-color);
   line-height: 23.4px;
   color: var(--title-text-color);
-  margin: 53px 10px 66px 10px;
+  margin: 0px 10px 10px 10px;
+  padding-bottom: 24px;
 }
 
-.main {
-  background-color: var(--background-color);
+.focus {
+  margin-top: 43px;
 }
 
 .section__title {
@@ -238,25 +238,21 @@
 
   .header__content {
     grid-column: 2 / 4;
-    margin-right: 21px;
+    margin-right: 22px;
     margin-left: 0px;
-    margin-bottom: 183px;
-    margin-top: 0px;
+    margin-bottom: 21px
   }
 
   .header__logo {
     grid-column: 1 / 4;
     font-size: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);
-    margin-top: 150px;
     margin-left: 0px;
-    margin-bottom: 139px;
   }
 
   .header__theme-menu {
     grid-column: 3;
-    margin-top: 192px;
-    margin-right: 21px;
-    padding-top: 0px;
+    margin-right: 22px;
+    margin-top: 19px;
   }
 
   .decorated-zone::after {
@@ -397,15 +393,23 @@
 }
 
 @media (width >= 1024px) {
+
+  .header {
+    display: grid;
+    grid-template-columns: 1fr min-content 1fr;
+    align-items: start;
+}
+
   .header__theme-menu {
     grid-column: 2;
-    margin: 20px;
+    margin: 0;
   }
 
   .header__theme-menu-list {
     display: flex;
     flex-direction: row;
     margin-left: 0px;
+    margin-top: 20px;
   }
 
   .rec__label {
@@ -423,15 +427,10 @@
     left: 20px;
   }
 
-  .header__logo {
-    margin-top: 250px;
-    margin-bottom: 111px;
-  }
-
   .header__content {
-    margin-left: 135px;
-    margin-bottom: 132px;
-    margin-top: 0px;
+    margin-top: 114px;
+    margin-left: 116px;
+    padding-bottom: 0px;
   }
 
   .section__title {

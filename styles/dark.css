@@ -23,6 +23,7 @@
   --background-img: url(../images/cover-image-dark.png);
 }
 
-.theme-dark .page {
+.theme-dark .rec__label{
   /* Вам также нужно будет написать ряд подобных селекторов */
+  display: block;
 }

@@ -41,6 +41,7 @@
   }
 }
 
-.theme-light .page {
+.theme-light .rec__label {
   /* Вам также нужно будет написать ряд подобных селекторов */
+  display: none;
 }
